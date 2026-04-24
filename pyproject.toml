@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diebold-yilmaz"
+version = "0.1.0"
+description = "Diebold-Yilmaz (2012) connectedness — generalized FEVD + total/directional/net spillover indices. Pure numpy+scipy."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [
+    { name = "Pierre Samson" },
+    { name = "Claude Opus (Anthropic)", email = "noreply@anthropic.com" },
+]
+keywords = ["diebold-yilmaz", "spillover", "connectedness", "fevd", "var", "pesaran-shin", "finance", "systemic-risk"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov"]
+statsmodels = ["statsmodels>=0.14"]
+
+[project.urls]
+Homepage = "https://github.com/darw007d/diebold-yilmaz"
+Issues = "https://github.com/darw007d/diebold-yilmaz/issues"
+
+[tool.setuptools.packages.find]
+include = ["diebold_yilmaz*"]
+exclude = ["tests*", "examples*"]
