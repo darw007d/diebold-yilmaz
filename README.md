@@ -107,7 +107,7 @@ From there: Total = mean off-diagonal; from_i = row_i off-diagonal sum; to_j = c
 - **Pierre Samson** ([@darw007d](https://github.com/darw007d)) — idea, use-case, design decisions
 - **Claude Opus** (Anthropic) — implementation and tests
 
-Originally motivated by the [OMEGA Swarm](https://github.com/darw007d/hedge-fund-mcp) project, Phase 19 Tier B #7. Sister package to [phawkes](https://pypi.org/project/phawkes/) (Hawkes), [fisherrao](https://pypi.org/project/fisherrao/) (information geometry), and [tailcor](https://pypi.org/project/tailcor/) (tail-contagion decomposition). Same "small, tested, publishable" pattern.
+Originally motivated by a quantitative-finance application (volatility-spillover measurement). Sister package to [phawkes](https://pypi.org/project/phawkes/) (Hawkes), [fisherrao](https://pypi.org/project/fisherrao/) (information geometry), and [tailcor](https://pypi.org/project/tailcor/) (tail-contagion decomposition). Same "small, tested, publishable" pattern.
 
 ## Citations
 
